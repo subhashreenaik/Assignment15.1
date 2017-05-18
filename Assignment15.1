@@ -1,0 +1,3 @@
+create table emp1(name string,course string,data int,city string) row format delimited fields terminated by ',' lines terminated by '\n' stored as textfile.
+
+select course , count(*) from emp1 group by course;
